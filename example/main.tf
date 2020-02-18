@@ -129,6 +129,12 @@ variable tag_name {
   type        = string
 }
 
+variable additional_tags {
+  description = "A mapping of additional tags to attach"
+  type        = map(string)
+  default     = {}
+}
+
 variable webacl {
   description = "The WAF Web ACL"
   type        = string
@@ -150,7 +156,7 @@ provider "aws" {
 }
 
 module demo_cf {
-  source                         = "git::https://github.com/jmgreg31/terraform-aws-cloudfront.git?ref=staging"
+  source                         = "git::https://github.com/jmgreg31/terraform-aws-cloudfront.git?ref=testing/staging"
   create_cf                      = var.create_cf
   acm_certificate_arn            = var.acm_certificate_arn
   alias                          = var.alias
@@ -172,5 +178,6 @@ module demo_cf {
   restriction_type               = var.restriction_type
   ssl_support_method             = var.ssl_support_method
   tag_name                       = var.tag_name
+  additional_tags                = var.additional_tags
   webacl                         = var.webacl
 }
