@@ -11,7 +11,7 @@ restriction_type         = "none"
 # iam_certificate_id       = "sslcert"
 ssl_support_method       = "sni-only"
 tag_name                 = "AWS Cloudfront Module"
-additional_tage          = {
+additional_tags          = {
     Test1 = "Test1"
 }
 # webacl                   = "webaclid"
