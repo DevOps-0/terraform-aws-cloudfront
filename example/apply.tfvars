@@ -1,10 +1,10 @@
-# create_cf                = true
+create_cf                = true
 alias                    = []
 comment                  = "AWS Cloudfront Module"
 enable                   = true
 enable_ipv6              = false
 http_version             = "http1.1"
-minimum_protocol_version = "TLSv1.1_2016"
+minimum_protocol_version = "TLSv1"
 price                    = "PriceClass_100"
 region                   = "us-east-1"
 restriction_type         = "none"

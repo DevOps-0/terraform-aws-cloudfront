@@ -9,7 +9,7 @@ price                    = "PriceClass_100"
 region                   = "us-east-1"
 restriction_type         = "none"
 # iam_certificate_id       = "sslcert"
-ssl_support_method       = "sni-only"
+# ssl_support_method       = "sni-only"
 tag_name                 = "AWS Cloudfront Module"
 # webacl                   = "webaclid"
 
